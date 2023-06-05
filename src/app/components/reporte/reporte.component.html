@@ -1,0 +1,36 @@
+<table>
+  <thead>
+    <tr>
+      <th>Fecha</th>
+      <th *ngFor="let estacion of estaciones">{{ estacion }}</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of reporteData">
+      <td>{{ item.fecha }}</td>
+      <td *ngFor="let estacion of estaciones">
+        <ng-container *ngIf="hasEstacion(item.estaciones, estacion)">
+          <div class="row">
+            <div class="col-6">Valor total: {{ getValorTotal(item.estaciones, estacion) }}</div>
+            <div class="col-6">Conteo Total: {{ getConteoTotal(item.estaciones, estacion) }}</div>
+          </div>
+         
+        </ng-container>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<hr>
+<tfoot>
+  <tr>
+    <td class="fecha-cell">Totales</td>
+      <td>
+        <div class="valor-contador">
+          <div class="valor-total">Valor recaudo total: {{ totalConteo }}</div>
+          <div class="conteo-total">Valor conteo total: {{ totalRecaudo}}</div>
+        </div>
+      </td>
+  </tr>
+</tfoot>
+
