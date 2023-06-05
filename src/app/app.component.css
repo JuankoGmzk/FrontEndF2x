@@ -1,0 +1,20 @@
+.datagrid-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  
+
+  .datagrid-container {
+    background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pngplay.com%2Fes%2Fimage%2Ftag%2Fblue-background&psig=AOvVaw2IcPGrjsnAk52xJawrlC5_&ust=1686086036275000&source=images&cd=vfe&ved=0CA4QjRxqFwoTCPCmhY2Grf8CFQAAAAAdAAAAABAD');
+    background-color: #f5f5f5; /* en caso de que la imagen no se cargue */
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
