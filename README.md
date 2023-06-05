@@ -13,3 +13,6 @@ Se encontrará 3 componentes:
 
 estos se encagarán cada uno de cumplir su tarea mostrando su respectiva tabla con la lógica de la prueba.
 
+## imports a tener cuenta
+
+`MatInputModule,MatPaginatorModule,MatTableModule,MatSortModule,FormsModule,HttpClientModule,MatCardModule,ReporteComponent`
